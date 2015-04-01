@@ -11,7 +11,7 @@ jdk:
 before_script:
 - export PLUGIN_DIR=$(pwd)
 - export PLUGIN_SLUG=$(basename $(pwd) | sed 's/^wp-//')
-- pear config-set auto_discover 1
+- mvn install -DskipTests=true
 
 script:
 - cd src/test/java/testscripts/
