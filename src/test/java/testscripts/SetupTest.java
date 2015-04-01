@@ -130,6 +130,7 @@ public class SetupTest {
 
 		// Click on publish button
 		wd.findElement(By.id("publish")).click();
+		//taking a screen shot
 
 		((PhantomJSDriver) wd).executePhantomJS("var page=this; "
 				+ "page.render('./screen/setup/CreateEditorPost.png'); ");
