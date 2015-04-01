@@ -15,7 +15,7 @@ before_script:
 
 script:
 - cd src/test/java/testscripts/
-- mvn test -Dgroups=Display
+- mvn test -Dtest=DisplayFilesInTableStyleTest
 
 
 
