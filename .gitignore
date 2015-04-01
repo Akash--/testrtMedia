@@ -1,0 +1,12 @@
+/bin
+/build
+/.gradle
+.classpath
+.settings
+.project
+/src/test/java/testscripts/Constants.java
+/test-output/*
+/target/*
+/.settings
+
+/target/

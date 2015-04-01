@@ -1,0 +1,502 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ <!-- You may comment  test cases of  other Plugins like Membership to not let Plan settings affect the run   -->
+<suite name="Basic Validation tests" verbose="6">
+	<!-- Setup file -->
+	<test name="Setup ">
+		<classes>
+			<class name="testscripts.SetupTest" />
+		</classes>
+	</test>
+	
+	<!-- Tests below will run on rtMedia Core and rtMedia Pro  -->
+ 
+ <!-- Display Settings Core and Pro  -->
+ 	<test name="Display files in table style format ">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.DisplayFilesInTableStyleTest" />
+		</classes>
+	</test>
+	
+	
+	
+		<test name="Enable download button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.EnableDownloadForMediaTest" />
+		</classes>
+	</test>
+	
+ 
+ 	<test name="Enable Likes button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.EnableLikesTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Enable Load More button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.EnablePaginationandLoadMoreForMedia" />
+		</classes>
+	</test>
+	
+ 
+    <test name="Enable Pagination button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.EnablePaginationForMedia" />
+		</classes>
+	</test>
+	
+	
+	 <test name="Disable Tabular For Files button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.NGDisplayFilesInTableStyleTest" />
+		</classes>
+	</test>
+	
+	
+	 <test name="Disable Likes button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.NGEnableLikesTest" />
+		</classes>
+	</test>
+	
+ 
+	 <test name="Disable Load More button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.NGEnablePaginationandLoadMoreForMedia" />
+		</classes>
+	</test>
+ 
+   <test name="Disable Views button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.NGViewsCounts" />
+		</classes>
+	</test>
+
+
+
+   <test name="Enable Views button">
+	<groups>
+    <run>
+      <include name="Display functional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.display.ViewsCountsTest" />
+		</classes>
+	</test>
+ 
+  
+ <!-- Allow user to comment on uploaded media
+
+  Use lightbox to display media 
+  
+  Number of media per page 
+  
+  Media display pagination option 
+  
+  Enable Masonry Cascading grid layout
+ -->  
+  
+  	
+	<!-- rtMedia BuddyPress Settings  Core and Pro -->
+	<test name="Enable Media in Profile ">
+	<groups>
+    <run>
+      <include name="buddypressfunctional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.buddyPress.enableMediaInProfileTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Enable Media in Profile Negative Case ">
+		<classes>
+			<class name="testscripts.buddyPress.enableMediaInProfileNGTest" />
+		</classes>
+	</test>
+	
+
+	<test name="Enable Media in Profile for Other Roles">
+		<classes>
+			<class name="testscripts.buddyPress.enableMediaInProfileOtherRolesTest" />
+		</classes>
+	</test>
+
+	<test name="Enable Media in Group">
+	<groups>
+    <run>
+      <include name="buddypressfunctional"/>
+    </run>
+  </groups>
+		<classes>
+			<class name="testscripts.buddyPress.enableMediaInGroupTest" />
+		</classes>
+	</test>
+
+	<test name="Enable Media in Group Negative Case">
+		<classes>
+			<class name="testscripts.buddyPress.enableMediaInGroupNGTest" />
+		</classes>
+	</test>
+
+
+	<test name="Enable Media in Group for Other Roles">
+		<classes>
+			<class name="testscripts.buddyPress.enableMediaInGroupOtherRolesTest" />
+		</classes>
+	</test>
+
+
+	<test name="Verify allowUploadFromActivityStream">
+		<classes>
+			<class name="testscripts.buddyPress.allowUploadFromActivityStreamTest" />
+		</classes>
+	</test>
+	
+	
+
+ <test name="Verify allowUploadFromActivityStream Negative Case">
+		<classes>
+			<class name="testscripts.buddyPress.allowUploadFromActivityStreamNGTest" />
+		</classes>
+	</test>
+
+
+	<test name=" Check allowUploadFromActivityStreamOtherRoles">
+		<classes>
+			<class
+				name="testscripts.buddyPress.allowUploadFromActivityStreamOtherRolesTest" />
+		</classes>
+	</test>
+
+	<test name=" Set numberOfMediaItemsInActivitySream">
+		<classes>
+			<class name="testscripts.buddyPress.numberOfMediaItemsInActivitySreamTest" />
+		</classes>
+	</test>
+
+	<test name=" Set numberOfMediaItemsInActivitySreamOtherRoles">
+		<classes>
+			<class
+				name="testscripts.buddyPress.numberOfMediaItemsInActivitySreamOtherRolesTest" />
+		</classes>
+	</test>
+	
+	<test name=" Check organizeMediaIntoAlbums">
+		<classes>
+			<class name="testscripts.buddyPress.organizeMediaIntoAlbumsTest" />
+		</classes>
+	</test>
+	
+	<test name="Check organizeMediaIntoAlbums Negative Case">
+		<classes>
+			<class name="testscripts.buddyPress.organizeMediaIntoAlbumsNGTest" />
+		</classes>
+	</test>
+	
+
+	<test name=" Check organizeMediaIntoAlbumsOtherRoles">
+		<classes>
+			<class name="testscripts.buddyPress.organizeMediaIntoAlbumsOtherRolesTest" />
+		</classes>
+	</test>
+ 
+ <!-- Privacy Settings Tests . Core and Pro    -->
+    
+    <test name="PrivacySettingsTest" >
+      <classes>
+    <class name="testscripts.privacy.PrivacySettingsTest"/>
+    </classes>
+       </test>
+
+<test name="PrivacySettingsTestForPrivate" >
+      <classes>
+    <class name="testscripts.privacy.PrivacySettingsPrivateTest"/>
+    </classes>
+       </test>
+
+<test name="PrivacySettingsTestForRegisteredUsers" >
+      <classes>
+    <class name="testscripts.privacy.PrivacySettingsRegisteredUsersTest"/>
+    </classes>
+       </test>
+	
+	  <!-- Media Type Settings Tests  Core and Pro (+ rtMedia Audio Video Encoding)   -->
+    
+    <test name="Check  Media Type : Photo" >
+      <classes>
+    <class name="testscripts.mediaTypes.PhotoTest"/>
+    </classes>
+       </test>
+       
+       <test name ="Check Media Type: Video">
+       <classes>
+       <class name ="testscripts.mediaTypes.VideoTest"/>
+       </classes>
+       
+       </test> 
+       <test name ="Check Media Type: Music" >
+       <classes>
+       <class name="testscripts.mediaTypes.MusicTest"/>
+       </classes>
+       </test>
+       
+
+	<!-- Tests for rtMedia Pro . Pro must be installed to run the tests below -->
+	
+	<!-- Display Settings Pro Only -->
+	
+	
+<!-- Enable 5 star rating for media
+
+Enable download button
+
+Enable view count
+
+Enable rtSocial share buttons
+
+
+Display music in playlist style (only for music tab)
+
+Display documents and other files in table style (only for Document and Others tab)
+
+Enable Google Docs for documents and files. 	
+	 -->
+	 
+	 
+	<!-- Media Types :  rtMedia Pro Only  -->
+       
+	 <test name ="Check Media Type: Document" >
+       <classes>
+       <class name="testscripts.mediaTypes.DocumentTest"/>
+       </classes>
+       </test>
+	
+	 <test name ="Check Media Type: Others" >
+       <classes>
+       <class name="testscripts.mediaTypes.OthersTest"/>
+       </classes>
+       </test>
+	
+	<!-- rtMedia Pro only BuddyPress tests start -->
+		<test name=" Check allowUserToCreateNewAlbums">
+		<classes>
+			<class name="testscripts.buddyPress.allowUserToCreateNewAlbumsTest" />
+		</classes>
+	</test>
+
+	<test name=" Check allowUserToCreateNewAlbumsOtherRoles">
+		<classes>
+			<class name="testscripts.buddyPress.allowUserToCreateNewAlbumsOtherRolesTest" />
+		</classes>
+	</test>
+	
+	<test name=" Check limitNumberOfAlbumsPerUser">
+		<classes>
+			<class name="testscripts.buddyPress.limitNumberOfAlbumsPerUserTest" />
+		</classes>
+	</test>
+	
+	<test name=" Check limitNumberOfAlbumsPerUserOtherRoles">
+		<classes>
+			<class name="testscripts.buddyPress.limitNumberOfAlbumsPerUserOtherRolesTest" />
+		</classes>
+	</test>
+
+	<test name=" Check enablePodcasting">
+		<classes>
+			<class name="testscripts.buddyPress.enablePodcastingTest" />
+		</classes>
+	</test>
+
+	<test name=" Check enablePodcastingOtherRoles">
+		<classes>
+			<class name="testscripts.buddyPress.enablePodcastingOtherRolesTest" />
+		</classes>
+	</test>
+	
+	<!--Pro Only BuddyPress tests end  -->
+	
+	
+	 <!-- Other Settings tests start. rtMedia Pro only Settings -->
+	 
+	 <test name=" Check Playlists enablePlaylists">
+		<classes>
+			<class name="testscripts.OtherSettings.enablePlaylistsTest" />
+		</classes>
+	</test>
+	<test name=" Check Playlists Other Roles">
+		<classes>
+			<class name="testscripts.OtherSettings.enablePlaylistsOtherRolesTest" />
+		</classes>
+	</test>
+	<test name=" Check  Favourite Media List enableFavList">
+		<classes>
+			<class name="testscripts.OtherSettings.enableFavListTest" />
+		</classes>
+	</test>
+	
+	<test name=" Check enableFavListOtherRoles">
+		<classes>
+			<class name="testscripts.OtherSettings.enableFavListOtherRolesTest" />
+		</classes>
+	</test>
+	
+	<test name=" Check enableUsersLikedMediaPage">
+		<classes>
+			<class name="testscripts.OtherSettings.enableUsersLikedMediaPageTest" />
+		</classes>
+	</test>
+	
+	<test name=" Check enableUsersLikedMediaPageOtherRoles">
+		<classes>
+			<class name="testscripts.OtherSettings.enableUsersLikedMediaPageOtherRolesTest" />
+		</classes>
+	</test>
+	
+	<test name=" Check allowUserToUploadMediaViaURL">
+		<classes>
+			<class name="testscripts.OtherSettings.allowUserToUploadMediaViaURLTest" />
+		</classes>
+	</test>
+		
+		<test name="Check allowUserToUploadMediaViaURLOtherRoles">
+		<classes>
+			<class name="testscripts.OtherSettings.allowUserToUploadMediaViaURLOtherRolesTest" />
+		</classes>
+	</test>
+	
+	<!-- Other Settings tests End -->
+  
+  <!-- WordPress Settings Pro Only  -->
+  
+<!-- Enable attachments in comments
+
+Enable for non-logged in users also
+
+Display attachments in comments as
+With Thumbnail + file name
+Without Thumbnail (only file name)
+Enable sitewide gallery section
+
+Slug for sitewide gallery section  -->
+	<test name="WordPress Settings Test">
+		<classes>
+			<class name="testscripts.wordPress.WordPressSettingsTest" />
+		</classes>
+	</test>
+			<test name="WordPress Settings Test For AnonymousUser">
+		<classes>
+			<class name="testscripts.wordPress.WordPressSettingsTestForAnonymousUser" />
+		</classes>
+	</test>
+	
+		<test name="WordPress Settings Test For Author">
+		<classes>
+			<class name="testscripts.wordPress.WordPressSettingsTestForAuthor" />
+		</classes>
+	</test>
+	
+		<test name="WordPress Settings Test For Contributor">
+		<classes>
+			<class name="testscripts.wordPress.WordPressSettingsTestForContributor" />
+		</classes>
+	</test>
+	
+		<test name="WordPress Settings Test For Editor">
+		<classes>
+			<class name="testscripts.wordPress.WordPressSettingsTestForEditor" />
+		</classes>
+	</test>
+	
+	
+		<test name="WordPress Settings Test For Subscriber">
+		<classes>
+			<class name="testscripts.wordPress.WordPressSettingsTestForSubscriber" />
+		</classes>
+	</test>
+	
+	
+	<test name="Check SiteWideGallery">
+		<classes>
+			<class name="testscripts.wordPress.SiteWideGalleryTest" />
+		</classes>
+	</test>
+  <!-- bbPress Settings Pro Only --> 
+
+<!-- Enable attachments in topic/reply
+ 
+Display attachments in topic/reply as  With Thumbnail + file name
+Without Thumbnail (only file name)
+
+ -->
+ 
+  <!-- Custom CSS Core and Pro  -->
+  <!-- Custom Css Settings -->
+  <test name = "Check Custom CSS">
+  <classes>
+  <class name= "testscripts.CustomCSS.CustomCssTest"/>
+  </classes>
+  </test>
+  <!-- Image Sizes Total Core and Pro --> 
+  
+  <!-- Moderation + Reward Points Pro Only  -->
+       	
+ <test name="Check Moderation">
+		<classes>
+			<class name="testscripts.moderation.ModerationTest" />
+		</classes>
+	</test>
+	
+	
+</suite>
+
