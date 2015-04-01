@@ -14,7 +14,6 @@ before_script:
 - mvn install -DskipTests=true
 
 script:
-- cd src/test/java/testscripts/
 - mvn test -Dtest=DisplayFilesInTableStyleTest
 
 
