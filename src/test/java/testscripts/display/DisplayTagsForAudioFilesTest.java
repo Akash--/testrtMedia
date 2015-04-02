@@ -103,7 +103,7 @@ public class DisplayTagsForAudioFilesTest {
 								
 								wd.findElement(By.cssSelector("#drag-drop-area > input")).click();
 								System.out.println("uploading");
-								Thread.sleep(95000);
+								Thread.sleep(20000);;
 								wd.navigate().refresh();
 								Thread.sleep(2000);
 								((PhantomJSDriver) wd).executePhantomJS("var page=this;" +"page.render('./screen/Display/Tags/Functional/uploadMediaTest2.png');");	
@@ -111,7 +111,7 @@ public class DisplayTagsForAudioFilesTest {
              
 							
 	                         Thread.sleep(2000);
-	                         wd.findElement(By.partialLinkText("SukoonMila")).click();
+	                         wd.findElement(By.cssSelector("#bulk-edit-form > ul.rtmedia-list.rtmedia-list-media.context-id-1.rtm-pro-allow-action > li.rtmedia-list-item > a.rtmedia-list-item-a")).click();
 							    System.out.println("clicked on mp3 Media");
 							    
 	                         Thread.sleep(2000);
