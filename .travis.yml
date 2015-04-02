@@ -14,7 +14,7 @@ before_script:
 - mvn install -DskipTests=true
 
 script:
-- mvn test -Dtest=bbPressSettingsTest
+- mvn test -Dgroups=Display
 
 
 
