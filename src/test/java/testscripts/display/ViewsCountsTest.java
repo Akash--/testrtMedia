@@ -54,7 +54,7 @@ public class ViewsCountsTest {
 
 		        System.out.println("off"); 
 	*/
-		List<WebElement> views = wd.findElements(By.cssSelector("span.rt-form-checkbox> label[for=\"rt-form-checkbox-4\"] > div.rt-switch.has-switch > div.switch-animate.switch-off"));
+		List<WebElement> views = wd.findElements(By.cssSelector("span.rt-form-checkbox> label[for=\"rt-form-checkbox-3\"] > div.rt-switch.has-switch > div.switch-animate.switch-off"));
 		System.out.println("Views size:" + views.size());
 		if (views.size() != 0){
 
@@ -97,18 +97,15 @@ Thread.sleep(1000);
 
 					
 					System.out.println("clicked on single media");
-               if(!wd.findElement(By.className("rtmedia-media-views")).isDisplayed())
+               if(wd.findElement(By.className("rtmedia-media-views")).isDisplayed())
                {
-            	   System.out.println("Views Text is not present");
+            	   
+            	   String v1= wd.findElement(By.className("rtmedia-media-views")).getText();
+              		System.out.println(v1);
+   				((PhantomJSDriver) wd).executePhantomJS("var page=this;" +"page.render('./screen//Display/views/Functional/viewsmedia5.png');");           
+   				
                }
-               else
-               {
-           		String v1= wd.findElement(By.className("rtmedia-media-views")).getText();
-           		System.out.println(v1);
-				((PhantomJSDriver) wd).executePhantomJS("var page=this;" +"page.render('./screen//Display/views/Functional/viewsmedia5.png');");
-
-           		
-               }
+             
 
 		
 		

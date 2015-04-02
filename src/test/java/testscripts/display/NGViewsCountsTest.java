@@ -47,7 +47,7 @@ public class NGViewsCountsTest {
 		
 		
 		
-		List<WebElement> views = wd.findElements(By.cssSelector("span.rt-form-checkbox> label[for=\"rt-form-checkbox-4\"] > div.rt-switch.has-switch > div.switch-animate.switch-on"));
+		List<WebElement> views = wd.findElements(By.cssSelector("span.rt-form-checkbox> label[for=\"rt-form-checkbox-3\"] > div.rt-switch.has-switch > div.switch-animate.switch-on"));
 		int i=views.size();
 	//	System.out.println("Views size:" + i);
 		if (i==1){
