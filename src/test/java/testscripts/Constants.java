@@ -17,15 +17,15 @@ public class Constants {
 
 
 	
-	public static final String WP_SERVER = "http://sumeetqatester.rtcamp.net";
+	public static final String WP_SERVER = "http:";
 
 	
 	
 	public static final String AlbumName = "My New Album";
 
 
-	public static final String USERNAME1 = "admin";
-	public static final String UPASSWORD1 = "sumeet";
+	public static final String USERNAME1 = "dcd";
+	public static final String UPASSWORD1 = "1452782";
 
 	/*public static final String Forums = "http://sumeetqatester.rtcamp.net/forums/";*/
 
